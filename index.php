@@ -1,9 +1,3 @@
-<html>
-    <head>
-        <title>Chess Tournament Aid</title>
-    </head>
-
-    <body>
-        <p>Hello, World</p>
-    </body>
-</html>
+<?php
+    header("Location: data/frontend/launch.php");
+?>

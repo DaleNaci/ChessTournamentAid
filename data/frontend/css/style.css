@@ -1,0 +1,25 @@
+.rectangle--position-center {
+    width: 65%;
+    height: 25%;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form--position-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__input {
+    width: 80%;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 10px 0;
+}
