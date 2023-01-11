@@ -6,8 +6,10 @@
   <body>
     <div class="rectangle--position-center">
       <h1>Enter Event Code</h1>
+
       <form class="form--position-center">
         <input class="form__input form-control" type="text" placeholder="Event Code">
+        
         <button class="btn btn-success" type="submit">Submit</button>
       </form>
     </div>
