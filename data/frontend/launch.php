@@ -11,6 +11,8 @@
         <input class="form__input form-control" type="text" placeholder="Event Code">
         
         <button class="btn btn-success" type="submit">Submit</button>
+
+        <input type="hidden" name="event-code-entered">
       </form>
     </div>
   </body>
