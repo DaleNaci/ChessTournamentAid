@@ -90,5 +90,11 @@ $tournamentStatus = $_SESSION["tournament-status"];
                 Reset Tournament
             </button>
         </div>
+
+        <script type="text/javascript">
+            document.getElementById("manage-players-btn").onclick = function () {
+                location.href = "manage_players.php";
+            }
+        </script>
     </body>
 </html>
