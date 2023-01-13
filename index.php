@@ -1,3 +1,3 @@
 <?php
-    header("Location: data/frontend/launch.html");
+    header("Location: data/frontend/launch.php");
 ?>
