@@ -1,6 +1,5 @@
-DROP TABLE chess_tournament_aid.matchassignment;
-DROP TABLE chess_tournament_aid.player;
 DROP TABLE chess_tournament_aid.match;
+DROP TABLE chess_tournament_aid.player;
 DROP TABLE chess_tournament_aid.tournament;
 
 
@@ -25,15 +24,9 @@ CREATE TABLE chess_tournament_aid.player (
 CREATE TABLE chess_tournament_aid.match (
     MatchNum int(4),
     Results char(1),
-    PRIMARY KEY (MatchNum)
-);
-
-CREATE TABLE chess_tournament_aid.matchassignment (
-    MatchNum int(4),
     White varchar(64),
     Black varchar(64),
-    PRIMARY KEY (MatchNum, White, Black),
-    FOREIGN KEY (MatchNum) REFERENCES chess_tournament_aid.match(MatchNum),
+    PRIMARY KEY (MatchNum),
     FOREIGN KEY (White) REFERENCES chess_tournament_aid.player(Name),
     FOREIGN KEY (Black) REFERENCES chess_tournament_aid.player(Name)
 );
