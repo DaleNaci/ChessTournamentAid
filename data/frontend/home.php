@@ -34,7 +34,8 @@ $tournamentStatus = $_SESSION["tournament-status"];
                         echo "enabled";
                     }
                 ?>
-                class="btn btn-primary box__btn">
+                class="btn btn-primary box__btn"
+                id="manage-players-btn">
                 Manage Players
             </button>
 
@@ -46,7 +47,8 @@ $tournamentStatus = $_SESSION["tournament-status"];
                         echo "enabled";
                     }
                 ?>
-                class="btn btn-primary box__btn">
+                class="btn btn-primary box__btn"
+                id="rankings-btn">
                 Rankings
             </button>
 
@@ -58,7 +60,8 @@ $tournamentStatus = $_SESSION["tournament-status"];
                         echo "enabled";
                     }
                 ?>
-                class="btn btn-primary box__btn">
+                class="btn btn-primary box__btn"
+                id="matches-btn">
                 Matches
             </button>
 
@@ -70,7 +73,8 @@ $tournamentStatus = $_SESSION["tournament-status"];
                         echo "enabled";
                     }
                 ?>
-                class="btn btn-primary box__btn">
+                class="btn btn-primary box__btn"
+                id="start-tournament-btn">
                 Start Tournament
             </button>
             
@@ -81,10 +85,10 @@ $tournamentStatus = $_SESSION["tournament-status"];
                     echo "enabled";
                 }
                 ?>
-                class="btn btn-danger box__btn">
+                class="btn btn-danger box__btn"
+                id="reset-tournament-btn">
                 Reset Tournament
             </button>
         </div>
-
     </body>
 </html>
