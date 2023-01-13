@@ -1,5 +1,4 @@
 <?php
-    require_once("../backend/add_event_code.php");
     require_once("../backend/get_event_code.php");
 
 
@@ -7,7 +6,7 @@
         $code_input = $_POST["code-input"];
 
         if (count(get_event_code($code_input)) == 0) {
-            header("Location: ../frontend/launch.php");
+            header("Location: ../frontend/launch.html");
         }
     }
 ?>
