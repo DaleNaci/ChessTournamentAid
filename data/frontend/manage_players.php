@@ -18,8 +18,8 @@ $tournamentStatus = $_SESSION["tournament-status"];
     </head>
 
     <body>
-
         <div class="box">
+            <button class="btn btn-primary box__btn">Back</button>
             <h1 class="box__h1">Manage Players</h1>
         </div>
     </body>
