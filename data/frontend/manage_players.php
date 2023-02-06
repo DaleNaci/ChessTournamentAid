@@ -5,9 +5,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$tournamentName = $_SESSION["tournament-name"];
-$tournamentStatus = $_SESSION["tournament-status"];
-
+$tournament_code = $_SESSION["tournament-code"];
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +26,26 @@ $tournamentStatus = $_SESSION["tournament-status"];
                     <th class="box__row-item box__row-item_th box__table__col_big">Name</th>
                     <th class="box__row-item box__row-item_th box__table__col_small">ELO</th>
                 </tr>
+
+                <?php
+                    require_once("../middleware/players.php");
+
+                    
+                    $players = get_player_list($tournament_code, True, False, True);
+                    $seed = 1;
+
+                    foreach ($players as $player) {
+                        echo "<tr>";
+
+                        echo "<td class='box__row-item'>$seed</td>";
+                        echo "<td class='box__row-item'>" . $player[0] . "</td>";
+                        echo "<td class='box__row-item'>" . $player[1] . "</td>";
+
+                        echo "</tr>";
+
+                        $seed++;
+                    }
+                ?>
             </table>
         </div>
 
