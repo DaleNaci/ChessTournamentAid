@@ -19,8 +19,22 @@ $tournamentStatus = $_SESSION["tournament-status"];
 
     <body>
         <div class="box">
-            <button class="btn btn-primary box__btn">Back</button>
+            <button id="back-btn" class="btn btn-primary box__btn">Back</button>
             <h1 class="box__h1">Manage Players</h1>
+
+            <table class="box__table">
+                <tr>
+                    <th class="box__row-item box__row-item_th box__table__col_small">Seed</th>
+                    <th class="box__row-item box__row-item_th box__table__col_big">Name</th>
+                    <th class="box__row-item box__row-item_th box__table__col_small">ELO</th>
+                </tr>
+            </table>
         </div>
+
+        <script type="text/javascript">
+            document.getElementById("back-btn").onclick = function () {
+                location.href = "home.php";
+            }
+        </script>
     </body>
 </html>
