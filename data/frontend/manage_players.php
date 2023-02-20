@@ -20,6 +20,15 @@ $tournament_code = $_SESSION["tournament-code"];
             <button id="back-btn" class="btn btn-primary box__btn">Back</button>
             <h1 class="box__h1">Manage Players</h1>
 
+            <form class="form--position-center" method="post" action="../middleware/players.php">
+                <input class="form__input form-control" type="text" placeholder="Name" name="name-input">
+                <input class="form__input form-control" type="text" placeholder="ELO" name="elo-input">
+
+                <button class="btn btn-success" type="submit">Submit</button>
+
+                <input type="hidden" name="player-added">
+            </form>
+
             <table class="box__table">
                 <tr>
                     <th class="box__row-item box__row-item_th box__table__col_small">Seed</th>
@@ -38,8 +47,8 @@ $tournament_code = $_SESSION["tournament-code"];
                         echo "<tr>";
 
                         echo "<td class='box__row-item'>$seed</td>";
-                        echo "<td class='box__row-item'>" . $player[0] . "</td>";
                         echo "<td class='box__row-item'>" . $player[1] . "</td>";
+                        echo "<td class='box__row-item'>" . $player[0] . "</td>";
 
                         echo "</tr>";
 
